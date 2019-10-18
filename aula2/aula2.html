@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title> Aula 2</title>
+    <meta charset="utf-8">
+    <style>
+        .botao{
+           color: white;
+           background-color: blue;
+           text-decoration: none;
+           padding: 10px; 
+           margin: 10px;
+           border-radius: 4px;
+           font-family: arial;
+         }
+
+         table,td,th, tr{
+             border:1px solid black;
+             border-collapse: collapse;
+         }
+         table{
+             width: 50%;
+         }
+
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            background-color: gainsboro;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 40px;
+         }
+        .menu a{
+            color:dimgray;
+            font-family: arial;
+            text-decoration: none;
+        }
+
+        .menu a:hover{
+            color: red;
+        }
+
+    </style>
+
+<body>
+    
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+
+    <a href="http://www.google.com.br" target="_blank" class="botao">Google</a>
+
+    <table>
+        <thead>
+            <th>N° Pedido</th>
+            <th> Data</th>
+            <th> Valor</th>
+            <th> Cliente</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>26/08/2019</td>
+                <td>99,90</td>
+                <td>Thiago Rocha</td>
+            </tr>
+
+            <tr>
+                <td>124</td>
+                <td>26/08/2019</td>
+                <td>199,90</td>
+                <td>Saulo</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Paginação</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</head>
+

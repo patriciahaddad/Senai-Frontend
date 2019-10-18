@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+header{
+    background-color:#FF0909;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    width: 320px; /*tamanho aleatório para dar o espaçamento*/
+    justify-content: space-between;
+}
+.menu a {
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover, .ativo{
+/*como colocar o hover (mudar a cor quando seleciona a ancora do menu); ativo (abrir uma div dentro do menu e colocar o ativo para deixar selecionado a página que o usuário está navegando)*/
+    color:#dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 5px;
+}
+nav{
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px; /*dar um espaço sem usar height*/
+}
+.banner{
+    width: 1366px;
+    margin: auto;
+    position: relative;
+}
+.texto_banner{
+    color: white;
+    position:absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.container{
+    width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.card{
+    width: 350px;
+    font-family: arial;
+    line-height: 2.0em;
+    margin-top: 60px;
+}
+.btn{
+    background-color: red;
+    color:white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius:4px;
+    font-family: arial;
+}
+.card p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.texto_banner .t1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.texto_banner .t2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.texto_banner p{
+    margin-bottom:20px;
+    font-family: arial;
+}
+.btn:hover{
+    color:red;
+    background-color: white;
+    border: 2px solid #FF0909;
+}
+footer{
+    background-color: red;
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*medias queries*/
+    /*tablet*/
+@media (max-width:1169px){
+    nav{
+        width: 768px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner{
+        width: 768px;
+    }
+    .texto_banner .t1{
+        font-size:22px;
+    }
+    .texto_banner .t2{
+        font-size: 15px;
+    }
+    .container{
+        width: 720px;
+    }
+}    
+/*smart - celular*/
+@media (max-width:767px){
+    nav{
+        width: 367px;
+        flex-direction: column;
+    }
+    .menu{
+        width: 150px; 
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .menu li{
+        padding-top: 15px;
+    }
+    .banner img{
+        display:none;
+    }
+    .texto_banner{
+        color:black;
+        position: static;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .container{
+        width:350px;
+    }
+    .banner{
+        width: 368px;
+    }
+}
